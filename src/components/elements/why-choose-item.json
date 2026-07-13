@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_why_choose_items",
+  "info": {
+    "displayName": "why-choose-item",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

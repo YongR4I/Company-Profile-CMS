@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_why_choose_uses",
+  "info": {
+    "displayName": "why-choose-us",
+    "icon": "check-square"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.why-choose-item"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heroSubtitle": {
+      "type": "string"
+    },
+    "missionLabel": {
+      "type": "string"
+    },
+    "missionText": {
+      "type": "text"
+    },
+    "processLabel": {
+      "type": "string"
+    },
+    "processSteps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.process-step"
+    }
+  }
+}

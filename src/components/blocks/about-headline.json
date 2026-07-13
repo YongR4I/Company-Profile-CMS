@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_about_headlines",
+  "info": {
+    "displayName": "about-headline",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

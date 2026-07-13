@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pageBlocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.hero",
+        "blocks.about-headline",
+        "blocks.why-choose-us",
+        "blocks.solutions"
+      ]
+    }
+  }
+}

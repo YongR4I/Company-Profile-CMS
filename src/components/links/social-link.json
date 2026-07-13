@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_links_social_links",
+  "info": {
+    "displayName": "social-link",
+    "icon": "twitter"
+  },
+  "options": {},
+  "attributes": {
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "Facebook",
+        "Instagram",
+        "LinkedIn",
+        "TikTok",
+        "YouTube",
+        "WhatsApp",
+        "X_Twitter"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
