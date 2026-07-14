@@ -8,7 +8,7 @@ export interface BlocksAboutHeadline extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
-    title: Schema.Attribute.String;
+    headline: Schema.Attribute.String;
   };
 }
 
@@ -22,6 +22,7 @@ export interface BlocksHero extends Struct.ComponentSchema {
     background: Schema.Attribute.Media<'images'>;
     ctaButtonHref: Schema.Attribute.String;
     ctaButtonText: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
 }
@@ -45,8 +46,8 @@ export interface BlocksWhyChooseUs extends Struct.ComponentSchema {
     icon: 'check-square';
   };
   attributes: {
+    headline: Schema.Attribute.String;
     items: Schema.Attribute.Component<'elements.why-choose-item', true>;
-    title: Schema.Attribute.String;
   };
 }
 

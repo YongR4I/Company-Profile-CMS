@@ -864,6 +864,7 @@ export interface ApiSiteSettingSiteSetting extends Struct.SingleTypeSchema {
       'oneToMany',
       'api::service.service'
     >;
+    heroFooterText: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

@@ -9,6 +9,9 @@
     "title": {
       "type": "string"
     },
+    "subtitle": {
+      "type": "string"
+    },
     "background": {
       "type": "media",
       "multiple": false,
