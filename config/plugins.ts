@@ -39,6 +39,14 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Plugin =>
       },
     },
   },
+  i18n: {
+    config: {
+      locales: [
+        env('I18N_LOCALES', 'en,id').split(','),
+      ].flat(),
+      defaultLocale: env('I18N_DEFAULT_LOCALE', 'en'),
+    },
+  },
 });
 
 export default config;
