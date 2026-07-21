@@ -35,6 +35,13 @@
         "images"
       ]
     },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "client": {
       "type": "string"
     },

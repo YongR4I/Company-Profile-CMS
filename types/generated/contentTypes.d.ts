@@ -807,6 +807,7 @@ export interface ApiPortfolioPortfolio extends Struct.CollectionTypeSchema {
     date: Schema.Attribute.Date & Schema.Attribute.Required;
     description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    images: Schema.Attribute.Media<'images', true>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -904,6 +905,11 @@ export interface ApiSiteSettingSiteSetting extends Struct.SingleTypeSchema {
   options: {
     draftAndPublish: false;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -914,12 +920,11 @@ export interface ApiSiteSettingSiteSetting extends Struct.SingleTypeSchema {
       'api::service.service'
     >;
     heroFooterText: Schema.Attribute.Text;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::site-setting.site-setting'
-    > &
-      Schema.Attribute.Private;
+    >;
     logo: Schema.Attribute.Media<'images'>;
     navLinks: Schema.Attribute.Component<'links.nav-link', true>;
     officeAddress: Schema.Attribute.Text;
@@ -943,13 +948,17 @@ export interface ApiTagTag extends Struct.CollectionTypeSchema {
   options: {
     draftAndPublish: false;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::tag.tag'> &
-      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::tag.tag'>;
     name: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
@@ -971,16 +980,20 @@ export interface ApiTechnologyTechnology extends Struct.CollectionTypeSchema {
   options: {
     draftAndPublish: false;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::technology.technology'
-    > &
-      Schema.Attribute.Private;
+    >;
     logo: Schema.Attribute.Media<'images'>;
     name: Schema.Attribute.String &
       Schema.Attribute.Required &
